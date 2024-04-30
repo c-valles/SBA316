@@ -50,3 +50,42 @@ document.form1.text1.focus();
 return false;
 }
 }
+
+//!Top Bar Navigation:
+// Get the navigation bar element by its ID
+const navBar = document.getElementsByClassName('topnav');
+
+// Change the background color of the navigation bar
+navBar.style.backgroundColor = '#333';
+navBar.style.overflow = 'hidden';
+navBar.style.color = '#f2f2f2';
+
+// Log the width and height of the navigation bar
+console.log("Navigation bar width:", navBar.offsetWidth, "pixels");
+console.log("Navigation bar height:", navBar.offsetHeight, "pixels");
+
+
+//!Email Validation:
+function validateEmailWithDomain(email, allowedDomain) {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (regex.test(email)) {
+      const domain = email.split('@')[1];
+      return domain === allowedDomain;
+  }
+  return false;
+}
+
+//!Terms Validation:
+function validate(){
+  // get the checkbox element from the DOM using the getElementId function
+  let checkbox=document.getElementById("terms");
+  // get the text element to display the status of checkbox
+  let text=document.getElementById("terms");
+  // use the checked property to check if the checkbox is checked
+  if (checkbox.checked){
+      // display result by assigning to innerHTML of the text element.
+      text.innerHTML="Thank you for accepting the agreement";
+  }
+  else{
+      text.innerHTML = "Please accept the agreement to proceed";
+    }}

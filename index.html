@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <script type="text/javascript" src="./script.js" defer></script>
+    <script src="sweetalert2.all.min.js"></script>
     <title>Jane's Recipes</title>
 </head>
 <body id="body">
@@ -13,16 +14,20 @@
         <h1>Jane's Recipes</h1>
     </header>
 
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#recipes">Recipes</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+    <div">
+      <ul id="topnav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
       </div>
 
+      <img src="./Apple_pie.jpg" alt="Apple pie">
 
     <div id="main-content">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis voluptatibus incidunt delectus libero, maiores suscipit placeat ex tempore! Fugiat mollitia laboriosam dicta quidem saepe porro expedita, neque possimus repellendus nesciunt!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque doloremque vero eaque alias reiciendis perspiciatis nihil a voluptatibus earum inventore eum porro, eveniet id placeat, eius iure sunt laudantium nulla?</p>
     </div>
 
     <div class="newsletter">
@@ -43,7 +48,7 @@
             <input type="checkbox" id="desserts" name="choices" value="desserts">
             <label for="desserts">Desserts</label>
             <div class="flex-row">
-              <input name="terms" type="checkbox"/>
+              <input name="terms" type="checkbox" id="terms"/>
               <label for="terms"
                 >I agree to the&nbsp;<a href="#">Terms of Use</a>.</label><br>
               <input type="submit" value="Register" />

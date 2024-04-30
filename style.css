@@ -1,3 +1,40 @@
+/* !BODY STYLING: ! */
 body {
-    background-color: #E4C59E;
+    background-color: #7E6363;
 }
+
+/* !HEADER STYLING: !*/
+header {
+  text-align: center;
+}
+
+img {
+    width: 500px;
+    display: block;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ! NAVIGATION STYLING: ! */
+#topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #503C3C;
+}
+
+a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #3E3232;
+}
+
